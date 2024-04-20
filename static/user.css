@@ -12,36 +12,40 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Space between buttons */
+    gap: 30px;
 }
 
 button {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
     border: none;
-    width: 190px; /* Width of the buttons */
-    height: 150px; /* Height of the buttons */
+    width: 190px;
+    height: 150px;
     font-size: 1em;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Evenly space the image and text */
+    justify-content: space-evenly;
     align-items: center;
-    border-radius: 20px; /* Rounded corners */
-    background-color: #4361ee; /* Blue gradient */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    color: white; /* White text for better contrast */
-    text-transform: uppercase; /* Uppercase text for a modern feel */
-    letter-spacing: 1px; /* Space out the letters slightly */
+    border-radius: 30px;
+    background-color: #4361ee; /*blue*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    #text-transform: uppercase;
+    letter-spacing: 1px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:active {
-    transform: translateY(-1px); /* Slight press-down effect */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Less shadow when pressed */
+    transform: translateY(+3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     background-color: #2338D9;
 }
 
 button img {
-    width: 80px; /* Adjust the size of the icon */
+    width: 80px;
     height: auto;
-    margin-bottom: 10px; /* Space between the icon and text */
+    margin-bottom: 10px;
 }
