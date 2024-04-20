@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Options</title>
+    <link href="{{ url_for('static', filename='user.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="center">
+        <button onclick="location.href='/recommendations'">
+            <img src="{{ url_for('static', filename='light2.png') }}"> Recommendation
+        </button>
+        <button onclick="location.href='/drinks'">Drinks</button>
+    </div>
+</body>
+</html>

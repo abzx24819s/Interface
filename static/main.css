@@ -29,6 +29,7 @@ button {
     font-weight: bold;
   background-color: #0783fa; /* Green */
   border: none;
+    border-radius: 30px ;
   color: white;
   padding: 25px 50px;
   text-align: center;

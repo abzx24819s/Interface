@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8; /* A soft background color */
+    font-family: "Comfortaa", sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between buttons */
+}
+
+button {
+    border: none;
+    width: 190px; /* Width of the buttons */
+    height: 150px; /* Height of the buttons */
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Evenly space the image and text */
+    align-items: center;
+    border-radius: 20px; /* Rounded corners */
+    background-color: #4361ee; /* Blue gradient */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: white; /* White text for better contrast */
+    text-transform: uppercase; /* Uppercase text for a modern feel */
+    letter-spacing: 1px; /* Space out the letters slightly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:active {
+    transform: translateY(-1px); /* Slight press-down effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Less shadow when pressed */
+    background-color: #2338D9;
+}
+
+button img {
+    width: 80px; /* Adjust the size of the icon */
+    height: auto;
+    margin-bottom: 10px; /* Space between the icon and text */
+}
