@@ -7,8 +7,11 @@
     <link href="{{ url_for('static', filename='user.css') }}" rel="stylesheet">
 </head>
 <body>
+    <div class="welcome">
+        Welcome <b>{{ username }}</b>!
+    </div>
     <div class="center">
-        <button onclick="location.href='/recommendations'">
+        <button onclick="location.href='/recommendations/'">
             <img src="{{ url_for('static', filename='light1.png') }}"> Recommendation
         </button>
         <button onclick="location.href='/drinks'">

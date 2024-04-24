@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Recommendation</title>
+    <link rel="stylesheet" href="/static/drink.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" >
+
 </head>
 <body>
+<div class="container">
+    <div class="recommendation-container">
+        <div class="recommendation-container-left">
+            <div class="drink-top">
+                <div class="Drinknav-buttons">
+                    <button id="prevDrink"><</button>
+                </div>
+                <div class="drink-info">
+                    <p class="drink-info-name">{{drink.name}}</p>
+                </div>
+                <div class="Drinknav-buttons">
+                    <button id="nextDrink">></button>
+                </div>
+            </div>
+            <div class="drink-bottom">
+                <div class="drink-info">
+                    <p class="drink-info-details">{{ drink.details }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="recommendation-container-right">
+            <div class="Drinknav-buttons">
+                <button id="prevDrink"><</button>
+            </div>
+            <div class="drink-image">
+                <img src="/static/Half%20full.png">
+            </div>
+            <div class="Drinknav-buttons">
+                <button id="nextDrink" onclick="location.href = '/+rec1 ;'>></button>
+            </div>
+        </div>
+    </div>
 
+        <div class="action-buttons">
+            <button id="closeButton">Close</button>
+            <button id="dispenseButton">Dispense</button>
+
+        </div>
+    </div>
+</div>
 </body>
 </html>

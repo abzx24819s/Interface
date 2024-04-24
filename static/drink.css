@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    padding: 20px;
+}
+.recommendation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    font-weight:bold;
+
+    .Drinknav-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+    }
+
+    .Drinknav-buttons button{
+        padding: 10px 20px;
+        Border:none;
+        background-color: #4361ee;
+        color: white;
+        Border-radius: 30px;
+    }
+
+    .recommendation-container-left {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50vw;
+        flex-direction: column;
+
+        .drink-info {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-conent: center;
+            align-items: center;
+
+            .drink-info-name {
+                font-weight: bolder;
+                font-size: 24px;
+            }
+        }
+
+        .drink-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .drink-bottom {
+            margin: 20px 50px;
+
+            .drink-info-details {
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .recommendation-container-right {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50vw;
+
+        .drink-image {
+            width: fit-content;
+            text-align: center;
+
+            img {
+                width: 120px;
+                height: auto;
+                border-radius: 5px;
+            }
+        }
+
+        #prevDrink {
+            margin-left: 30px;
+        }
+
+        #nextDrink {
+            margin-right: 30px;
+        }
+    }
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 28vw;
+    position: relative;
+    top: 40px;
+
+
+
+
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    width: 150px; /* or more, based on your design */
+    height: 35px;
+    font-family: 'Comfortaa', sans-serif;
+}
+#closeButton{
+    background: darkgrey;
+}
+
+
+button:active {
+    transform: translateY(+3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #2338D9;
+}
+
